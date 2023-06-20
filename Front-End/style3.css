@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: #2C2463;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+div#logouvv {
+    height: 100%;
+    width: 20%;
+}
+
+header img {
+    color: white;
+    width: 38%;
+}
+
+div#resto {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px   ;
+}
+
+i#user {
+    color: white;
+    font-size: 80px;
+}
+
+i#seta {
+    color: white;
+    font-size: 50px;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+section#esquerda {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#logocertificado {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#info {
+    background-color: #d9d9d9;
+    width: 95%;
+    height: 20%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#info h1 {
+    margin: 10px;
+}
+
+div#botoes {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    border: 2px solid #2C2463;
+    background-color: #BCB8CC;
+    border-radius: 30px;
+    height: 70%;
+    width: 80%;
+    margin: 15px;
+    font-size: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.bt:hover {
+    background-color: #EBB31C;
+}
+
+section#direita {
+    height: 100%;
+    width: 80%;
+}
+
+div#titulo {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+div#painel {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #EBB31C;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 80px;
+}
+
+footer h1 {
+    display: inline-block;
+}
+
+/* INICIO DA PERSONALIZAÇÃO */
+
+/* INICIO DA ÁREA DOS QUADROS */
+
+div#quadros{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+div#NumeroDeCertificados{
+    background-color: #d9d9d9;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div#HorasComplementares{
+    background-color: #d9d9d9;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#PontuacaoTotal{
+    background-color: #d9d9d9;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.QuadrosTitulo{
+    align-self: flex-start;
+    margin-top: 4%;
+    align-self: center;
+    justify-self: center;
+}
+
+.QuadrosIcones{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 105px;
+}
+
+.QuadrosNumero{
+    text-align: center;  
+    font-size: 80px;
+
+}
+
+.IconeEnumero{
+    width: 100%;
+    height: 80%;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#score_icon{
+    height: 100px;
+    width: 79px;
+    float: left;
+    margin-right: 105px;
+}
+
+/*FIM DO ÁREA DOS QUADROS */
+
+
+/* INICIO DA BARRA DE PROGRESSO */
+div#BarraDeProgresso{
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 8%;
+}
+
+.titulo-barra{
+    position: relative;
+    top: -120px;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.barra{
+    height: 40px;
+    width: 85%;
+    margin-bottom: 60px;
+    position: relative;
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+    
+}
+
+#preenchimento-barra{
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: green;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.porcentagem{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-align: right; /* alinha o texto à direita */
+    width: 40px; /* largura do texto de porcentagem */
+}
