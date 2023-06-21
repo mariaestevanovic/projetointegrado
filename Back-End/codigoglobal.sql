@@ -1,6 +1,3 @@
--- Apagar o Banco de Dados caso ele já exista
-DROP DATABASE IF EXISTS uvv;
-
 -- Apagar o usuário caso ele já exista
 DROP USER IF EXISTS aluno;
 
@@ -11,7 +8,7 @@ CREATEROLE
 ENCRYPTED PASSWORD '2004';
 
 -- Criar o Banco de Dados
-CREATE DATABASE uvv
+CREATE DATABASE certificados
        OWNER aluno
 	   TEMPLATE template0
 	   ENCODING 'UTF8'
