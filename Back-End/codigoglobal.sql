@@ -31,8 +31,8 @@ CREATE TABLE certificados.Certificados (
                 Curso                 VARCHAR     NOT NULL,
                 Status                VARCHAR(10) NOT NULL,
                 Data_de_envio         DATE        NOT NULL,
-                Data_de_validao       DATE        NOT NULL,
-                Motivo_da_negacao     VARCHAR     NOT NULL,
+                Data_de_validacao     DATE        NOT NULL,
+                Motivo_da_negacao     VARCHAR             ,
                 Imagem_do_certificado BYTEA       NOT NULL,
                 CONSTRAINT certificados_pk PRIMARY KEY (Certificado_id)
 );
