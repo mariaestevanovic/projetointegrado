@@ -11,14 +11,14 @@ CREATE TABLE certificados.Certificados (
 );
 
 -- Adicionar comentários da tabela e de cada coluna da tabela certificados
-COMMENT ON TABLE  certificados.Certificados                       IS 'TABELA DOS CERTIFICADOS'                  ;
-COMMENT ON COLUMN certificados.Certificados.Certificado_id        IS 'ID DO CERTIFICADO DO ALUNO'               ;
-COMMENT ON COLUMN certificados.Certificados.Curso                 IS 'NOME DO CURSO DO ALUNO'                   ;
-COMMENT ON COLUMN certificados.Certificados.Status                IS 'STATUS DO CERTIFICADO DO ALUNO'           ;
-COMMENT ON COLUMN certificados.Certificados.Data_de_envio         IS 'DATA DE ENVIO DO CERTIFICADO DO ALUNO'    ;
-COMMENT ON COLUMN certificados.Certificados.Data_de_validao       IS 'DATA DA VALIDAÇÃO DO CERTIFICADO'         ;
-COMMENT ON COLUMN certificados.Certificados.Motivo_da_negao       IS 'MOTIVO DA NEGAÇÃO DO CERTIFICADO DO ALUNO';
-COMMENT ON COLUMN certificados.Certificados.Imagem_do_certificado IS 'IMAGEM DO CERTIFICADO DO ALUNO'           ;
+COMMENT ON TABLE  certificados.Certificados                         IS 'TABELA DOS CERTIFICADOS'                  ;
+COMMENT ON COLUMN certificados.Certificados.Certificado_id          IS 'ID DO CERTIFICADO DO ALUNO'               ;
+COMMENT ON COLUMN certificados.Certificados.Curso                   IS 'NOME DO CURSO DO ALUNO'                   ;
+COMMENT ON COLUMN certificados.Certificados.Status                  IS 'STATUS DO CERTIFICADO DO ALUNO'           ;
+COMMENT ON COLUMN certificados.Certificados.Data_de_envio           IS 'DATA DE ENVIO DO CERTIFICADO DO ALUNO'    ;
+COMMENT ON COLUMN certificados.Certificados.Data_de_validacao       IS 'DATA DA VALIDAÇÃO DO CERTIFICADO'         ;
+COMMENT ON COLUMN certificados.Certificados.Motivo_da_negacao       IS 'MOTIVO DA NEGAÇÃO DO CERTIFICADO DO ALUNO';
+COMMENT ON COLUMN certificados.Certificados.Imagem_do_certificado   IS 'IMAGEM DO CERTIFICADO DO ALUNO'           ;
 
 -- Criar a tabela colaborador
 CREATE TABLE certificados.Colaborador (
@@ -34,15 +34,15 @@ CREATE TABLE certificados.Colaborador (
 );
 
 -- Adicionar comentários da tabela e de cada coluna da tabela colaborador
-COMMENT ON TABLE  certificados.Colaborador                       IS 'TABELA DO COLABORADOR'                           ;
-COMMENT ON COLUMN certificados.Colaborador.CPF                   IS 'CPF DO COLABORADOR'                              ;
-COMMENT ON COLUMN certificados.Colaborador.Nome                  IS 'NOME DO COLABORADOR'                             ;
-COMMENT ON COLUMN certificados.Colaborador.Email                 IS 'ENDEREÇO DE EMAIL DO COLABORADOR'                ;
-COMMENT ON COLUMN certificados.Colaborador.Cargo                 IS 'CARGO DO COLABORADOR'                            ;
-COMMENT ON COLUMN certificados.Colaborador.Histrico_profissional IS 'ARQUIVO DO HISTÓRICO PROFISSIONAL DO COLABORADOR';
-COMMENT ON COLUMN certificados.Colaborador.Salrio                IS 'SALÁRIO DO COLABORADOR'                          ;
-COMMENT ON COLUMN certificados.Colaborador.Contrato              IS 'CONTRATO DE TRABALHO DO COLABORADOR'             ;
-COMMENT ON COLUMN certificados.Colaborador.Departamento          IS 'ÁREA DE DEPARTAMENTO DO COLABORADOR'             ;
+COMMENT ON TABLE  certificados.Colaborador                        IS 'TABELA DO COLABORADOR'                           ;
+COMMENT ON COLUMN certificados.Colaborador.CPF                    IS 'CPF DO COLABORADOR'                              ;
+COMMENT ON COLUMN certificados.Colaborador.Nome                   IS 'NOME DO COLABORADOR'                             ;
+COMMENT ON COLUMN certificados.Colaborador.Email                  IS 'ENDEREÇO DE EMAIL DO COLABORADOR'                ;
+COMMENT ON COLUMN certificados.Colaborador.Cargo                  IS 'CARGO DO COLABORADOR'                            ;
+COMMENT ON COLUMN certificados.Colaborador.Historico_profissional IS 'ARQUIVO DO HISTÓRICO PROFISSIONAL DO COLABORADOR';
+COMMENT ON COLUMN certificados.Colaborador.Salario                IS 'SALÁRIO DO COLABORADOR'                          ;
+COMMENT ON COLUMN certificados.Colaborador.Contrato               IS 'CONTRATO DE TRABALHO DO COLABORADOR'             ;
+COMMENT ON COLUMN certificados.Colaborador.Departamento           IS 'ÁREA DE DEPARTAMENTO DO COLABORADOR'             ;
 
 -- Criar a tabela colaborador_endereco
 CREATE TABLE certificados.Colaborador_endereco (
