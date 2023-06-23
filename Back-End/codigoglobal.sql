@@ -10,7 +10,8 @@ CREATE TABLE certificados.Certificados (
                 CONSTRAINT certificados_pk PRIMARY KEY (Certificado_id)
 );
 
--- Adicionar comentários de cada coluna da tabela certificados
+-- Adicionar comentários da tabela e de cada coluna da tabela certificados
+COMMENT ON TABLE  certificados.Certificados                       IS 'TABELA DOS CERTIFICADOS'                  ;
 COMMENT ON COLUMN certificados.Certificados.Certificado_id        IS 'ID DO CERTIFICADO DO ALUNO'               ;
 COMMENT ON COLUMN certificados.Certificados.Curso                 IS 'NOME DO CURSO DO ALUNO'                   ;
 COMMENT ON COLUMN certificados.Certificados.Status                IS 'STATUS DO CERTIFICADO DO ALUNO'           ;
@@ -32,7 +33,8 @@ CREATE TABLE certificados.Colaborador (
                 CONSTRAINT colaborador_pk PRIMARY KEY (CPF)
 );
 
--- Adicionar comentários de cada coluna da tabela colaborador
+-- Adicionar comentários da tabela e de cada coluna da tabela colaborador
+COMMENT ON TABLE  certificados.Colaborador                       IS 'TABELA DO COLABORADOR'                           ;
 COMMENT ON COLUMN certificados.Colaborador.CPF                   IS 'CPF DO COLABORADOR'                              ;
 COMMENT ON COLUMN certificados.Colaborador.Nome                  IS 'NOME DO COLABORADOR'                             ;
 COMMENT ON COLUMN certificados.Colaborador.Email                 IS 'ENDEREÇO DE EMAIL DO COLABORADOR'                ;
@@ -54,7 +56,8 @@ CREATE TABLE certificados.Colaborador_endereco (
                 CONSTRAINT colaborador_endereco_pk PRIMARY KEY (CEP)
 );
 
--- Adicionar comentários de cada coluna da tabela colaborador_endereco
+-- Adicionar comentários da tabela e de cada coluna da tabela colaborador_endereco
+COMMENT ON TABLE  certificados.Colaborador_endereco             IS 'TABELA DO ENDEREÇO DO COLABORADOR'   ;
 COMMENT ON COLUMN certificados.Colaborador_endereco.CEP         IS 'CEP DO ENDEREÇO DO ALUNO'            ;
 COMMENT ON COLUMN certificados.Colaborador_endereco.CPF         IS 'CPF DO COLABORADOR'                  ;
 COMMENT ON COLUMN certificados.Colaborador_endereco.Bairro      IS 'BAIRRO DA RESIDENCIA DO COLABORADOR' ;
@@ -72,7 +75,8 @@ CREATE TABLE certificados.Colaborador_telefone (
                 CONSTRAINT colaborador_telefone_pk PRIMARY KEY (Numero)
 );
 
--- Adicionar comentários de cada coluna da tabela colaborador_telefone
+-- Adicionar comentários da tabela e de cada coluna da tabela colaborador_telefone
+COMMENT ON TABLE  certificados.Colaborador_telefone          IS 'TABELA DO TELEFONE DO COLABORADOR'        ;
 COMMENT ON COLUMN certificados.Colaborador_telefone.Numero   IS 'NÚMERO DE TELEFONE DO COLABORADOR'        ;
 COMMENT ON COLUMN certificados.Colaborador_telefone.CPF      IS 'NÚMERO DE IDENTIFICAÇÃO DO COLABORADOR'   ;
 COMMENT ON COLUMN certificados.Colaborador_telefone.DDD      IS 'DDD DO TELEFONE DO COLABORADOR'           ;
@@ -83,12 +87,13 @@ CREATE TABLE certificados.Alunos (
                 Matricula  VARCHAR(9)   NOT NULL,
                 Nome       VARCHAR(255) NOT NULL,
                 Curso      VARCHAR      NOT NULL,
-                Nascimento VARCHAR(8)   NOT NULL,
+                Nascimento DATE         NOT NULL,
                 Email      VARCHAR(100) NOT NULL,
                 CONSTRAINT alunos_pk PRIMARY KEY (Matricula)
 );
 
--- Adicionar comentários de cada coluna da tabela alunos
+-- Adicionar comentários da tabela e de cada coluna da tabela alunos
+COMMENT ON TABLE  certificados.Alunos            IS 'TABELA DOS ALUNOS'          ;
 COMMENT ON COLUMN certificados.Alunos.Matricula  IS 'MATRICULA DO ALUNO'         ;
 COMMENT ON COLUMN certificados.Alunos.Nome       IS 'NOME DO ALUNO'              ;
 COMMENT ON COLUMN certificados.Alunos.Curso      IS 'CURSO DO ALUNO'             ;
@@ -107,7 +112,8 @@ CREATE TABLE certificados.Alunos_endereco (
                 CONSTRAINT alunos_endereco_pk PRIMARY KEY (CEP)
 );
 
--- Adicionar comentários de cada coluna da tabela alunos_endereco
+-- Adicionar comentários da tabela e de cada coluna da tabela alunos_endereco
+COMMENT ON TABLE  certificados.Alunos_endereco             IS 'TABELA DO ENDEREÇO DO ALUNO'   ;
 COMMENT ON COLUMN certificados.Alunos_endereco.CEP         IS 'CEP DO ENDEREÇO DO ALUNO'      ;
 COMMENT ON COLUMN certificados.Alunos_endereco.Matricula   IS 'MATRICULA DO ALUNO'            ;
 COMMENT ON COLUMN certificados.Alunos_endereco.Numero      IS 'NUMERO DA RESIDENCIA DO ALUNO' ;
@@ -125,7 +131,8 @@ CREATE TABLE certificados.Alunos_telefone (
                 CONSTRAINT alunos_telefone_pk PRIMARY KEY (Numero)
 );
 
--- Adicionar comentários de cada coluna da tabela alunos_telefone
+-- Adicionar comentários da tabela e de cada coluna da tabela alunos_telefone
+COMMENT ON TABLE  certificados.Alunos_telefone           IS 'TABELA DO TELEFONE DOS ALUNOS'      ;
 COMMENT ON COLUMN certificados.Alunos_telefone.Numero    IS 'NUMERO DE TELEFONE DO ALUNO'        ;
 COMMENT ON COLUMN certificados.Alunos_telefone.Matricula IS 'MATRICULA DO ALUNO'                 ;
 COMMENT ON COLUMN certificados.Alunos_telefone.DDD       IS 'DDD DO TELEFONE DO ALUNO'           ;
@@ -139,7 +146,8 @@ CREATE TABLE certificados.Universidade (
                 CONSTRAINT universidade_pk PRIMARY KEY (Matricula, CPF)
 );
 
--- Adicionar comentários de cada coluna da tabela universidade
+-- Adicionar comentários da tabela e de cada coluna da tabela universidade
+COMMENT ON TABLE  certificados.Universidade                IS 'TABELA DA UNIVERSIDADE'                ;
 COMMENT ON COLUMN certificados.Universidade.Matricula      IS 'MATRICULA DO ALUNO'                    ;
 COMMENT ON COLUMN certificados.Universidade.CPF            IS 'NÚMERO DE IDENTIFICAÇÃO DO COLABORADOR';
 COMMENT ON COLUMN certificados.Universidade.Certificado_id IS 'ID DO CERTIFICADO DO ALUNO'            ;
